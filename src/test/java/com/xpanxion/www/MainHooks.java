@@ -14,8 +14,7 @@ import cucumber.api.java.Before;
 /**
  * Cucumber hooks are executed before or after each scenario
  * 
- * @author dhenry
- * @author jchristi
+ * 
  */
 public class MainHooks {
 	/**
@@ -33,9 +32,9 @@ public class MainHooks {
 
 	}
 
-	// TODO: is there any way to get the SharedContext object?
 	/**
-	 * Logout the authenticated user after each scenario
+	 * Take a screenshot of any failing scenario
+	 * @param scenario
 	 */
 	@After(order = 99999)
 	public void takeScreenshot(Scenario scenario) {
